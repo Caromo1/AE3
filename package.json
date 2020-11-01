@@ -1,0 +1,16 @@
+{
+  "name": "asis",
+  "version": "0.0.1",
+  "description": "Desarrolando una aplicacion \"ASISTENTE\" para la recopilacion de datos de un usuario.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Asist",
+    "node",
+    "dom"
+  ],
+  "author": "Carlos Rodriguez Monzo",
+  "license": "ISC"
+}
