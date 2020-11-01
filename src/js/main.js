@@ -9,16 +9,12 @@
 function continuar(){
 	if(document.getElementById("cento").value == ""){
 		urlesc.style.display = "block";
-
 	}else{
-
 		if(ex.style.display === "none"){
-
 			ex.style.display = "block";
 		}else{
 			ex.style.display = "none";
 		}
-		
 		b1.style.display= "block"
 		b2.style.display= "block"
 		form.style.display= "block"
@@ -29,36 +25,55 @@ function atras(){
 	ex.style.display = "block"
 	form.style.display = "none";
 	b2.style.display = "block";
-	b1.style.display = "none";
+    b1.style.display = "none";
+    document.getElementById("pel").classList.add("escElemento");
 
 }
 function caca(){
 
     if((document.getElementById("nombre").value == "")){
-        p1.style.display = "block";
-       
-
+        document.getElementById("p1").classList.remove("escElemento");
+        document.getElementById("p11").classList.remove("escElemento");
     }else{
-        p1.style.display = "none";
+        document.getElementById("p1").classList.add("escElemento");
+        document.getElementById("p11").classList.add("escElemento");
     }if((document.getElementById("apellido").value == "")){
-        p2.style.display = "block";
+        document.getElementById("p2").classList.remove("escElemento");
+        document.getElementById("p22").classList.remove("escElemento");
     }else{
-        p2.style.display = "none";
+        document.getElementById("p2").classList.add("escElemento");
+        document.getElementById("p22").classList.add("escElemento");
     }if((document.getElementById("fecha").value == "")){
-        p3.style.display = "block";
+        document.getElementById("p3").classList.remove("escElemento");
+        document.getElementById("p33").classList.remove("escElemento");
     }else{
-        p3.style.display = "none";
+        document.getElementById("p3").classList.add("escElemento");
+        document.getElementById("p33").classList.add("escElemento");
     }if((document.getElementById("cp").value == "")){
-        p4.style.display = "block";
+        document.getElementById("p4").classList.remove("escElemento");
+        document.getElementById("p44").classList.remove("escElemento");
     }else{
-        p4.style.display = "none";
+        document.getElementById("p4").classList.add("escElemento");
+        document.getElementById("p44").classList.add("escElemento");
     }if((document.getElementById("country").value == "")){
-        p5.style.display = "block";
+        document.getElementById("p5").classList.remove("escElemento");
+        document.getElementById("p55").classList.remove("escElemento");
     }else{
-        p5.style.display = "none";
+        document.getElementById("p5").classList.add("escElemento");
+        document.getElementById("p55").classList.add("escElemento");
     }if((document.getElementById("municipio").value == "")){
-        p6.style.display = "block";
+        document.getElementById("p6").classList.remove("escElemento");
+        document.getElementById("p66").classList.remove("escElemento");
     }else{
-        p6.style.display = "none";
+        document.getElementById("p6").classList.add("escElemento");
+        document.getElementById("p66").classList.add("escElemento");
 }
 }
+
+
+
+
+
+
+
+

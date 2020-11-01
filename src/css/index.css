@@ -77,44 +77,48 @@ input[type=submit]:hover {
   display: none;
 } 
 #p1{
-  display: none;
+
     border-style: solid;
   border-color: red;
    background-color: gray;
    color: red;
 }
 #p2{
-  display: none;
+
   border-style: solid;
   border-color: red;
    background-color: gray;
    color: red;
  }
 #p3{
-  display: none;
+
   border-style: solid;
   border-color: red;
    background-color: gray;
    color: red;
 }
 #p4{
-  display: none;
+
   border-style: solid;
   border-color: red;
    background-color: gray;
    color: red;
 }
 #p5{
-  display: none;
+
   border-style: solid;
   border-color: red;
    background-color: gray;
    color: red;
 }
 #p6{
-  display: none;
+ 
   border-style: solid;
   border-color: red;
    background-color: gray;
    color: red;
+}
+
+.escElemento{
+  display: none;
 }

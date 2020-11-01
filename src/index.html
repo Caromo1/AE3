@@ -10,7 +10,8 @@
 	<ul>
             <button id="b1" onclick="atras()">Atras</button>
             <button id="b2" onclick="continuar()">Continuar</button>
-              <button id="b3" onclick="caca()">Caca</button>
+            <button id="b3" onclick="caca()">Caca</button>
+            <button id="b4" onclick="">enseñameloputita</button>
 </ul>
 <div id="ex" class="paso1" class="letras">
 	<h1>AE3.- Proyecto Javascript Asistente (Wizard)</h1>
@@ -19,24 +20,36 @@
 <input type="text" id="cento">
 
 </div>
+<div id="pel">
+  <p id="p11" class="escElemento">Introduce Nombre</p>
+  <p id="p22" class="escElemento">Introduce Apellidos</p>
+  <p id="p33" class="escElemento">Introduce Fecha Nacimiento</p>
+  <p id="p44" class="escElemento">Introduce CodigoPostal</p>
+  <p id="p55" class="escElemento">Introduce Provincia</p>
+  <p id="p66" class="escElemento">Introduce Municipios</p>
+</div>
 
 <div id="form" >
   <form action="caca.php">
     <label for="nombre">Nombre</label>
     <input type="text" id="nombre" name="firstname" placeholder="Tu nombre">
-    <p id="p1">Introduce Nombre</p>
+    <p id="p1" class="escElemento">Introduce Nombre</p>
 <br>
+
     <label for="lname">Apellido</label>
     <input type="text" id="apellido" name="lastname" placeholder="Tus apellidos">
-    <p id="p2">Introduce Apellidos</p>
+    <p id="p2" class="escElemento">Introduce Apellidos</p>
 <br>
+
 	<label for="fecha">Fecha Nacimiento</label>
-	<br>
+  <br>
+  
 	<input type="date" id="fecha" name="trip-start"
 	       value="0000-00-00"
 	       min="1000-01-01" max="2020-01-01">
-    <p id="p3">Introduce Fecha Nacimiento</p>
+    <p id="p3" class="escElemento">Introduce Fecha Nacimiento</p>
 <br>
+
  	<label for="direccion">Direccion</label>
  	<br>
 	    <input type="text" id="Direccion" name="direccion" placeholder="Tu Direccion">
@@ -45,7 +58,7 @@
  <label for="cp">Codigo Postal</label>
  <br>
     <input type="number" id="cp" name="lastname" placeholder="Codigo Postal">
-    <p id="p4">Introduce CodigoPostal</p>
+    <p id="p4" class="escElemento" >Introduce CodigoPostal</p>
 <br>
     <label for="country">Provincias:</label>
     <select id="country" name="country">
@@ -54,14 +67,18 @@
       <option value="canada">Alicante</option>
       <option value="usa">Castellon</option>
     </select>
-    <p id="p5">Introduce Provincia</p>
+    <p id="p5" class="escElemento" >Introduce Provincia</p>
 <br>
 
     <label for="municipio">Municipio</label>
     <input type="text" id="municipio" placeholder="Tu Municipio" value style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase()">
-    <p id="p6">Introduce Municipios</p>
+    <p id="p6" class="escElemento" >Introduce Municipios</p>
 <br>    
   </form>
+</div>
+
+<div id="mustraform"> 
+  
 </div>
 </body>
 </html>
