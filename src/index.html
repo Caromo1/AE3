@@ -8,18 +8,20 @@
 </head>
 <body>
 	<ul>
-            <button id="b1" onclick="atras()">Atras</button>
-            <button id="b2" onclick="continuar()">Continuar</button>
-            <button id="b3" onclick="caca()">Caca</button>
-            <button id="b4" onclick="">enseñameloputita</button>
+            <button id="b1" onclick="atras()" >Atras</button>
+            <button id="b2" onclick="continuar()" >Continuar</button>
+            <button id="b4" onclick="enseñaform()" class="escElemento">Continuar</button>
+            
 </ul>
 <div id="ex" class="paso1" class="letras">
 	<h1>AE3.- Proyecto Javascript Asistente (Wizard)</h1>
 	<p>Se pide el desarrollo de una aplicación “asistente” para la recopilación de datos de un usuario. Dicha aplicación debe ser un proyecto JavaScript gestionado con Node Package Manager, con todos los datos necesarios para poder contactar con el autor, tener claro qué hace la aplicación, cómo se llama la aplicación, la URL al repositorio, qué versión de la aplicación es y, muy importante, el modelo de licencia</p>
-<p id="urlesc">Introduce la URL </p>
-<input type="text" id="cento">
+<p>Introduce URL</p>
+<input type="text" id="url">
+<p id="urlesc" class="escElemento">Introduce la URL </p>
 
 </div>
+<p id="demo"></p>
 <div id="pel">
   <p id="p11" class="escElemento">Introduce Nombre</p>
   <p id="p22" class="escElemento">Introduce Apellidos</p>
@@ -32,53 +34,71 @@
 <div id="form" >
   <form action="caca.php">
     <label for="nombre">Nombre</label>
-    <input type="text" id="nombre" name="firstname" placeholder="Tu nombre">
+    <input type="text" id="nombre" name="firstname" placeholder="Tu nombre" required>
     <p id="p1" class="escElemento">Introduce Nombre</p>
 <br>
 
     <label for="lname">Apellido</label>
-    <input type="text" id="apellido" name="lastname" placeholder="Tus apellidos">
+    <input type="text" id="apellido" name="lastname" placeholder="Tus apellidos" required>
     <p id="p2" class="escElemento">Introduce Apellidos</p>
 <br>
 
 	<label for="fecha">Fecha Nacimiento</label>
   <br>
   
-	<input type="date" id="fecha" name="trip-start"
+	<input type="date" id="fecha" name="trip-start" required
 	       value="0000-00-00"
 	       min="1000-01-01" max="2020-01-01">
-    <p id="p3" class="escElemento">Introduce Fecha Nacimiento</p>
+    <p id="p3" class="escElemento" >Introduce Fecha Nacimiento</p>
 <br>
 
  	<label for="direccion">Direccion</label>
  	<br>
-	    <input type="text" id="Direccion" name="direccion" placeholder="Tu Direccion">
+	    <input type="text" id="Direccion" name="direccion" placeholder="Tu Direccion" required>
 <br>
 
  <label for="cp">Codigo Postal</label>
  <br>
-    <input type="number" id="cp" name="lastname" placeholder="Codigo Postal">
-    <p id="p4" class="escElemento" >Introduce CodigoPostal</p>
+    <input type="number" id="cp" name="lastname" placeholder="Codigo Postal" required>
+    <p id="p4" class="escElemento">Introduce CodigoPostal</p>
 <br>
     <label for="country">Provincias:</label>
-    <select id="country" name="country">
+    <select id="country" name="country" required>
       <option value="default"></option>
-      <option value="australia">Valencia</option>
-      <option value="canada">Alicante</option>
-      <option value="usa">Castellon</option>
+      <option value="Valencia">Valencia</option>
+      <option value="Alicante">Alicante</option>
+      <option value="Castellon">Castellon</option>
     </select>
     <p id="p5" class="escElemento" >Introduce Provincia</p>
 <br>
 
     <label for="municipio">Municipio</label>
-    <input type="text" id="municipio" placeholder="Tu Municipio" value style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase()">
+    <input type="text" id="municipio" placeholder="Tu Municipio" value style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase()" required>
     <p id="p6" class="escElemento" >Introduce Municipios</p>
+    
 <br>    
   </form>
+  <button id="b3" onclick="validaform()">Validar</button>
+</div>
+<div id="paso3" class="escElemento">
+<p id="mnombre"></p>
+<p id="mapellido"></p>
+<p id="mfecha"></p>
+<p id="mcp"></p>
+<p id="mcountry"></p>
+<p id="mmunicipio"></p>
+<p>Son estos los datos correctos?</p>
+<button id="correcto" onclick="final()" class="escElemento">Correcto</button>
+<button id="b5" onclick="atras2()" class="escElemento">Atras</button>
+
 </div>
 
-<div id="mustraform"> 
+<div id="termina" class="escElemento">
+  Datos enviados Gracias<br>
+  
+  <button id="bter" onclick="location.href="">Terminar</button>
   
 </div>
+  
 </body>
 </html>

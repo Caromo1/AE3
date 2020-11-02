@@ -5,6 +5,7 @@
   font-family: "Fuente: sans-serif";
   font-size: 40px;
   color: #5d5d5d;
+  
 }
 
 ul {
@@ -25,6 +26,7 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  text-align: center;
 }
 
 li a:hover {
@@ -39,9 +41,11 @@ input[type=text], select {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  text-align: center;
 }
 
 input[type=number], select {
+  text-align: center;
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -52,6 +56,7 @@ input[type=number], select {
 }
 
 input[type=submit] {
+  text-align: center;
   width: 100%;
   background-color: #4CAF50;
   color: white;
@@ -71,10 +76,13 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+  text-align: center;
 }
 
 #b1{
   display: none;
+  justify-content: space-between;
+
 } 
 #p1{
 
@@ -82,6 +90,7 @@ input[type=submit]:hover {
   border-color: red;
    background-color: gray;
    color: red;
+   text-align: center;
 }
 #p2{
 
@@ -89,6 +98,7 @@ input[type=submit]:hover {
   border-color: red;
    background-color: gray;
    color: red;
+   text-align: center;
  }
 #p3{
 
@@ -96,6 +106,7 @@ input[type=submit]:hover {
   border-color: red;
    background-color: gray;
    color: red;
+   text-align: center;
 }
 #p4{
 
@@ -103,6 +114,7 @@ input[type=submit]:hover {
   border-color: red;
    background-color: gray;
    color: red;
+   text-align: center;
 }
 #p5{
 
@@ -110,6 +122,7 @@ input[type=submit]:hover {
   border-color: red;
    background-color: gray;
    color: red;
+   text-align: center;
 }
 #p6{
  
@@ -117,8 +130,11 @@ input[type=submit]:hover {
   border-color: red;
    background-color: gray;
    color: red;
+   text-align: center;
 }
 
 .escElemento{
   display: none;
+  text-align: center;
 }
+
